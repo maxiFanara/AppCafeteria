@@ -1,0 +1,69 @@
+/* src/App.css */
+.App {
+  text-align: center;
+  font-family: Arial, sans-serif;
+}
+
+input {
+  margin: 5px;
+  padding: 10px;
+  width: 300px;
+}
+
+button {
+  padding: 10px 20px;
+  margin: 5px;
+}
+
+ul {
+  list-style: none;
+  padding: 0;
+}
+
+li {
+  margin: 10px 0;
+}
+
+.image-container {
+  width: 100%;
+  height: 200px; /* Ajusta este valor al tamaño deseado */
+  overflow: hidden;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.producto-img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover; /* Asegura que la imagen se ajuste sin deformarse */
+}
+
+.producto-card {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  height: 100%;
+}
+
+.producto-card .card-body {
+  display: flex;
+  flex-direction: column;
+}
+
+.producto-card .btn {
+  margin-top: auto;
+}
+@media print {
+  body {
+      visibility: hidden;
+    }
+ 
+  .ticket {
+      visibility: visible;
+    top: 0;
+    left: 0;
+    width: 100%;
+    
+  }
+}
